@@ -1,8 +1,8 @@
-test_input_file = open("test_input.txt", "r")
-input_file = open("input.txt", "r")
+from utils.input_reader import read_test_input, read_input
 
-test_input = test_input_file.read().split("\n")
-actual_input = input_file.read().split("\n")
+
+test_input = read_test_input()
+actual_input = read_input()
 
 
 def reverse_string(str: str) -> str:

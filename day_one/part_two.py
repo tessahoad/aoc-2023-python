@@ -1,11 +1,11 @@
 import itertools
 import re
+from utils.input_reader import read_test_input, read_input
 
-test_input_file = open("test_input_2.txt", "r")
-input_file = open("input.txt", "r")
 
-test_input = test_input_file.read().split("\n")
-actual_input = input_file.read().split("\n")
+test_input = read_test_input()
+actual_input = read_input()
+
 digits = {"one": '1', "two": '2', "three": '3', "four": '4', "five": '5', "six": '6', "seven": '7', "eight": '8',
           "nine": '9'}
 
